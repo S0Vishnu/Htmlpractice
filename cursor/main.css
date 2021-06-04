@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+.bg {
+    height: 100vh;
+    background-color: rgb(16, 7, 22);
+}
+
+.cursor {
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+    transition-timing-function: ease-out;
+    animation: curAnim 0.5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 10px solid grey;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -11.5px;
+    left: -11.8px;
+    animation: curAnim2 0.5s infinite alternate;
+}
+
+@keyframes curAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes curAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
