@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #02e0e8;
+    background: #e8d102;
 }
 
 .container {
@@ -45,6 +45,6 @@ h2 span {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #02e0e8;
+    background: #e8d102;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
