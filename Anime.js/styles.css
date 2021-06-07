@@ -48,3 +48,10 @@ h2 span {
     background: #e8d102;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
+.block:nth-child(3n + 2) {
+    background: rgb(0, 255, 234);
+}
+
+.block:nth-child(3n + 3) {
+    background: rgb(255, 0, 0);
+}
