@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flyingtext</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, nemo. Dicta dolor fuga placeat possimus amet repudiandae, sed, quos soluta beatae ea repellendus minima omnis maiores. Maxime facilis ratione dolore. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Facilis amet natus maxime? Autem adipisci minus unde itaque doloremque maiores! Odio eos quibusdam minima repellat minus iure eius blanditiis dolorem itaque. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Pariatur itaque provident aliquid porro! Iusto voluptatibus fugit iure debitis ab pariatur autem, expedita maxime ratione. Optio aliquid et esse suscipit vitae?
+        </p>
+    </section>
+
+    <script src="./anime.min.js"></script>
+    <script>
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+        const animation = anime.timeline({
+            targets: '.text span',
+            easing: 'easeInOutExpo',
+            loop: false,
+        });
+
+        animation.add({
+            rotate: function() {
+                return anime.random(-360, 360)
+            },
+            translateX: function() {
+                return anime.random(-500, 500)
+            },
+            translateY: function() {
+                return anime.random(-500, 500)
+            },
+            duration: -500,
+        })
+
+        .add({
+            rotate: 0,
+            translateX: 0,
+            translateY: 0,
+            duration: 1500,
+            delay: anime.stagger(20),
+        })
+    </script>
+</body>
+
+</html>
