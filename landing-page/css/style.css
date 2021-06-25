@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.site-logo {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 24px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: #8d785b;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-transform: uppercase;
+  line-height: 100px;
+  color: #8d785b;
+}
+
+.site-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-menu .menu-item {
+  margin-left: 60px;
+  cursor: pointer;
+}
+
+.showreel {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #8d785b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1a1a1a;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+.container .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 140px;
+  color: #8d785b;
+  z-index: 2;
+}
+
+.container .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 570px;
+  height: 570px;
+  border: 1px solid #585858;
+  border-radius: 100%;
+}
+
+.container .circle-2 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  background: #a83e0c;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.container .circle-3 {
+  position: absolute;
+  top: 64%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 240px;
+  height: 240px;
+  background: #a83e0c;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.container .wrapper-img {
+  overflow: hidden;
+  position: absolute;
+  top: 35% !important;
+  right: 18%;
+  width: 30%;
+  height: 90vh;
+}
+
+.container .wrapper-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .wrapper-img .box {
+  background: #1a1a1a;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+/*# sourceMappingURL=style.css.map */
