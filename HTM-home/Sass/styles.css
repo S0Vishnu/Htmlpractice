@@ -85,7 +85,14 @@ nav .nav-links .btn a {
 
 @media screen and (max-width: 768px) {
   nav {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #e6e6e6;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   nav img {
     position: absolute;
