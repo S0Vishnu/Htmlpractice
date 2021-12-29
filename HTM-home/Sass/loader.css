@@ -48,13 +48,13 @@
 
 @-webkit-keyframes reveal {
   to {
-    width: 2em;
+    width: 1.5em;
   }
 }
 
 @keyframes reveal {
   to {
-    width: 2em;
+    width: 1.5em;
   }
 }
 /*# sourceMappingURL=loader.css.map */
