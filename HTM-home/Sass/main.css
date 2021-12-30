@@ -204,4 +204,25 @@
     opacity: 0.8;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .landing .cta {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .landing .cta h1 {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 21px;
+    z-index: 1;
+  }
+}
 /*# sourceMappingURL=main.css.map */
