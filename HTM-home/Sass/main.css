@@ -11,7 +11,9 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background: #c8deff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c8deff), to(#d3ffd3));
+    background: linear-gradient(180deg, #c8deff 0%, #d3ffd3 100%);
     overflow: hidden;
     .cta {
         flex: 3;
