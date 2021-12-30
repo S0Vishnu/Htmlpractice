@@ -1,0 +1,213 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  background: white;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav img {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 7%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 70%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+nav .nav-links li a {
+  color: #0880ec;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav .nav-links li a i {
+  padding: .2rem;
+}
+
+nav .nav-links li a:hover {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
+nav .nav-links .btn {
+  background: #0880ec;
+  padding: .2rem 1.1rem;
+  border-radius: 2rem;
+}
+
+nav .nav-links .btn a {
+  color: white;
+}
+
+nav .nav-links .btn:hover {
+  background: #3e8e41;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-links a:hover {
+  border-bottom: #3e8e41 solid 2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: .8rem;
+  height: 3rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 40px;
+  min-width: 280px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .arrow {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: -5.5px;
+  left: 32px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: -1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    background: white;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav img {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  nav .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    z-index: 3;
+    -webkit-animation: cross 0.2s ease;
+            animation: cross 0.2s ease;
+  }
+  nav .hamburger .line1,
+  nav .hamburger .line2,
+  nav .hamburger .line3 {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  nav .nav-links {
+    position: fixed;
+    background: #e6e6e6;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-clip-path: circle(0px at 90% -10%);
+            clip-path: circle(0px at 90% -10%);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    pointer-events: none;
+  }
+  nav .nav-links li {
+    margin: 5px;
+  }
+  nav .nav-links li a {
+    font-size: 20px;
+    color: #0880ec;
+    font-weight: 700;
+  }
+  nav .nav-links .btn {
+    background: #3e8e41;
+    padding: 5px 10px;
+    border-radius: 2rem;
+  }
+  nav .nav-links .btn a {
+    color: white;
+  }
+  .nav-links.open {
+    -webkit-clip-path: circle(2000px at 90% -10%);
+            clip-path: circle(2000px at 90% -10%);
+    pointer-events: all;
+  }
+  @-webkit-keyframes cross {
+    100% {
+      rotate: 45deg;
+    }
+  }
+  @keyframes cross {
+    100% {
+      rotate: 45deg;
+    }
+  }
+}
+/*# sourceMappingURL=nav-bar.css.map */

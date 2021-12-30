@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/9dbea8cb42.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Sass/styles.css">
+    <script src="https://kit.fontawesome.com/9dbea8cb42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Sass/nav-bar.css">
     <link rel="stylesheet" href="./Sass/loader.css">
+    <link rel="stylesheet" href="./Sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -20,16 +23,37 @@
         </div>
     </div>
     <nav id="navbar">
-        <div><img src="./Assets/htm-logo-svg.svg" alt="Heal Tent Media"></div>
+        <a href="#">
+            <div><img src="./Assets/htm-logo-svg.svg" alt="Heal Tent Media"></div>
+        </a>
         <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+            <li>
+                <div class="dropdown"><a href="#">Services<i class="fas fa-caret-down"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Management & Coordination</a>
+                        <a href="#">Market & Consumer Research</a>
+                        <a href="#">Social Media Marketing</a>
+                        <a href="#">Content, Video, Logo & Website Creation</a>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </li>
             <li><a href="#">Tools</a></li>
             <li><a href="#">Blog</a></li>
+            <li>
+                <div class="dropdown"><a href="#">Programs<i class="fas fa-caret-down"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">VALARCHI</a>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </li>
             <li>
                 <div class="btn"><a href="#">Contact Us</a></div>
             </li>
@@ -38,9 +62,24 @@
     <section class="landing">
         <h1>Heal Tent Media</h1>
     </section>
-    <section class="landing">
-        <h1>Heal Tent Media</h1>
+    <section class="why-us">
+        <h1>Why US?</h1>
     </section>
+    <section class="services">
+        <h1>Services</h1>
+    </section>
+    <section class="tools">
+        <h1>Tools</h1>
+    </section>
+    <section class="blog">
+        <h1>Blog
+        </h1>
+    </section>
+    <footer>
+        <section class="footer">
+            <h1>Footer</h1>
+        </section>
+    </footer>
     <script src="./Js/gsap.min.js"></script>
     <script src="./Js/ScrollTrigger.min.js"></script>
     <script src="./Js/index.js"></script>
