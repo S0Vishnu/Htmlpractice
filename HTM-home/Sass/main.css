@@ -15,6 +15,8 @@ section {
 
 div {
   height: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .flex {
@@ -46,7 +48,8 @@ h2,
 h1,
 h3,
 p {
-  color: #1a1919;
+  color: #262626;
+  pointer-events: none;
 }
 
 p {
@@ -131,7 +134,7 @@ h3 {
   font-size: 1.125rem;
   line-height: 30px;
   text-align: center;
-  color: #1a1919;
+  color: #262626;
 }
 
 .sub-head {
@@ -204,7 +207,7 @@ h3 {
 }
 
 .container .card .content .t h2 {
-  color: #272323;
+  color: #4d4d4d;
   font-size: 2rem;
 }
 
@@ -230,7 +233,7 @@ h3 {
 
 .container .card-big .t h2 {
   text-align: center;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .container .card-big .content {
@@ -238,10 +241,11 @@ h3 {
       -ms-flex: 2;
           flex: 2;
   padding: 0;
+  margin: auto 5px;
 }
 
 .left {
-  border-right: #e4e3e3 solid 2px;
+  border-right: #f2f2f2 solid 3px;
 }
 
 .left h2 {
@@ -249,15 +253,15 @@ h3 {
 }
 
 .right {
-  border-left: #e4e3e3 solid 2px;
+  border-left: #f2f2f2 solid 3px;
 }
 
 .right h2 {
-  color: #0880ec;
+  color: #3bb143;
 }
 
 .card:hover {
-  background-color: #e4e3e3;
+  background-color: #f2f2f2;
 }
 
 .content a {
@@ -265,14 +269,13 @@ h3 {
   color: white;
   margin: 5px;
   padding: 2px 10px;
-  background-color: #3bb143;
+  background-color: #fe3e13;
   border-radius: .5rem;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .content a:hover {
-  color: white;
   background-color: #0880ec;
 }
 
@@ -289,7 +292,7 @@ h3 {
 }
 
 .why-us h1 {
-  color: #1a1919;
+  color: #262626;
 }
 
 .tools {
@@ -299,7 +302,7 @@ h3 {
 }
 
 .tools h1 {
-  color: #1a1919;
+  color: #262626;
 }
 
 .blog {
@@ -309,7 +312,7 @@ h3 {
 }
 
 .blog h1 {
-  color: #1a1919;
+  color: #262626;
 }
 
 .footer {
@@ -319,6 +322,6 @@ h3 {
 }
 
 .footer h1 {
-  color: #1a1919;
+  color: #262626;
 }
 /*# sourceMappingURL=main.css.map */
