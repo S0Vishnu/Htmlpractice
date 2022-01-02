@@ -486,8 +486,8 @@ h3 {
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 10% 100%;
-       object-position: 10% 100%;
+    -o-object-position: 20% 100%;
+       object-position: 20% 100%;
     opacity: .2;
     -webkit-filter: blur(3px);
             filter: blur(3px);
@@ -546,7 +546,7 @@ h3 {
     font-size: 50px;
   }
   .content p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .just p {
     text-align: justify;
