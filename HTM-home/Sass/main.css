@@ -49,12 +49,21 @@ span {
   letter-spacing: 2px;
 }
 
-p {
+h2 {
+  line-height: 40px;
+  padding: 8px 0;
+}
+
+p,
+a {
   font-family: 'Poppins', sans-serif;
+  line-height: 25px;
 }
 
 h3 {
   font-size: 15px;
+  line-height: 25px;
+  padding: 0 0 5px 0;
 }
 
 .landing {
@@ -113,7 +122,6 @@ h3 {
   display: block;
   padding: 0 10px;
   font-size: 1.125rem;
-  line-height: 30px;
   text-align: center;
 }
 
@@ -129,7 +137,6 @@ h3 {
   padding: 0 50px;
   margin: 0 auto 40px auto;
   font-size: 1.125rem;
-  line-height: 30px;
   text-align: center;
   color: #262626;
 }
@@ -137,7 +144,7 @@ h3 {
 .sub-head {
   position: relative;
   padding: 0 0 20px;
-  margin: 50px 0 20px 0;
+  margin: 0 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,8 +302,11 @@ h3 {
   background-color: #f2f2f2;
 }
 
-.content a {
+a {
   text-decoration: none;
+}
+
+.content a {
   color: white;
   margin-top: 15px;
   padding: 2px 10px;
@@ -430,9 +440,92 @@ h3 {
   cursor: pointer;
 }
 
+.links {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.links .fc {
+  display: block;
+  margin: 15px;
+  width: 160px;
+  height: auto;
+}
+
+.links .fc .c {
+  display: block;
+  margin: 5px 0;
+  color: #0880ec;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  font-weight: 450;
+}
+
+.links .fc h4 i {
+  margin-right: 5px;
+}
+
+.social {
+  height: 200px;
+  width: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 0;
+}
+
+.social h4 {
+  font-size: 1.5rem;
+}
+
+.social a {
+  width: 70px;
+}
+
+.social a i {
+  font-size: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-align: center;
+  padding: 10px;
+  width: 60px;
+  height: 50px;
+  border: #262626 solid 1px;
+  border-radius: 5px;
+}
+
+.social a i:hover {
+  color: #3bb143;
+}
+
+.social a .li {
+  color: #0880ec;
+}
+
+.social a .fb {
+  color: #4267B2;
+}
+
+.social a .in {
+  color: #bc2a8d;
+}
+
+.social a .yo {
+  color: #fe3e13;
+}
+
 .footer {
-  height: 30vh;
+  height: 90px;
   overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-top: #4d4d4d 2px solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -556,6 +649,15 @@ h3 {
   }
   .container .card .content {
     padding: 0;
+  }
+  .footer .t span {
+    color: #3bb143;
+  }
+  .footer .t h3 {
+    font-size: 12px;
+  }
+  .footer .con p {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
