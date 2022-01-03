@@ -11,17 +11,18 @@
   outline: none;
 }
 
-section {
+.-S {
   display: block;
   overflow: hidden;
-  margin: auto 10px;
+  width: 100vw;
+  height: auto;
 }
 
 .-m {
   margin: 0;
 }
 
-div {
+.-D {
   height: auto;
   max-width: 1200px;
   margin: auto;
@@ -42,7 +43,6 @@ div {
 h2,
 h1,
 h3,
-p,
 span {
   color: #262626;
   pointer-events: none;
@@ -66,7 +66,7 @@ h3 {
   padding: 0 0 5px 0;
 }
 
-.landing {
+.landing-D {
   height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,43 +75,43 @@ h3 {
   background: white;
 }
 
-.landing .screen {
+.landing-D .screen {
   display: none;
 }
 
-.landing .cta {
+.landing-D .cta {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
   text-align: center;
 }
 
-.landing .cta h1 {
+.landing-D .cta h1 {
   position: relative;
   font-size: 4rem;
 }
 
-.landing .cta h1 span {
+.landing-D .cta h1 span {
   color: #3bb143;
   font-size: 8rem;
 }
 
-.landing .cta h4 {
+.landing-D .cta h4 {
   display: none;
 }
 
-.landing .cta-img {
+.landing-D .cta-img {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
   padding: 10px;
 }
 
-.landing .cta-img .img {
+.landing-D .cta-img .img {
   margin-top: 20vh;
 }
 
-.landing .cta-img img {
+.landing-D .cta-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -125,14 +125,14 @@ h3 {
   text-align: center;
 }
 
-.what-we-do {
+.what-we-do-D {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.what-we-do .content {
+.what-we-do-D .content {
   display: block;
   padding: 0 50px;
   margin: 0 auto 40px auto;
@@ -311,7 +311,7 @@ a {
   margin-top: 15px;
   padding: 2px 10px;
   background-color: #fe3e13;
-  border-radius: .5rem;
+  border-radius: .25rem;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -320,19 +320,19 @@ a {
   background-color: #0880ec;
 }
 
-.services {
+.services-D {
   height: auto;
   background-color: white;
   overflow: hidden;
 }
 
-.why-us {
+.why-us-D {
   height: auto;
   background-color: white;
   overflow: hidden;
 }
 
-.why-us h1 {
+.why-us-D h1 {
   color: #262626;
 }
 
@@ -346,7 +346,7 @@ a {
   overflow: hidden;
 }
 
-.news-letter {
+.news-letter-D {
   height: 250px;
   background-color: #5200FF;
   width: auto;
@@ -358,19 +358,19 @@ a {
           flex-direction: column;
 }
 
-.news-letter .t {
+.news-letter-D .t {
   padding-top: 60px;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-.news-letter .t h2 {
+.news-letter-D .t h2 {
   color: white;
   font-size: 2rem;
 }
 
-.news-letter .email {
+.news-letter-D .email {
   margin-bottom: 80px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -384,7 +384,7 @@ a {
           justify-content: center;
 }
 
-.news-letter .email .content {
+.news-letter-D .email .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,7 +395,7 @@ a {
   background-color: white;
 }
 
-.news-letter .email .content .mail-svg {
+.news-letter-D .email .content .mail-svg {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -410,27 +410,27 @@ a {
           justify-content: center;
 }
 
-.news-letter .email .content .mail {
+.news-letter-D .email .content .mail {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
   margin: 0;
 }
 
-.news-letter .email .content .mail input[type=email] {
+.news-letter-D .email .content .mail input[type=email] {
   width: 100%;
   color: #262626;
   padding: 10px 5px;
   border: none;
 }
 
-.news-letter .email .content .button {
+.news-letter-D .email .content .button {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-.news-letter .email .content .button input[type=button] {
+.news-letter-D .email .content .button input[type=button] {
   background-color: #3bb143;
   border: none;
   color: white;
@@ -526,6 +526,10 @@ a {
   padding-top: 20px;
   margin-bottom: 20px;
   border-top: #4d4d4d 2px solid;
+}
+
+.footer span {
+  color: #3bb143;
 }
 
 @media screen and (max-width: 768px) {
