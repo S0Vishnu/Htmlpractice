@@ -1,9 +1,17 @@
-nav {
+$primary-color: #0880ec;
+$secondary-color: #3bb143;
+$primary-bg: white;
+$button: #fe3e13;
+$text-color-gray: #f2f2f2;
+.navbar-S {
     position: fixed;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
     top: 0;
     width: 100%;
-    height: 3rem;
-    background: white;
+    height: 90px;
+    background: $primary-bg;
     z-index: 1;
     transition: 0.5s;
     img {
@@ -24,9 +32,8 @@ nav {
         margin-left: auto;
         margin-right: 50px;
         li a {
-            color: #0880ec;
+            color: $secondary-color;
             text-decoration: none;
-            font-weight: 700;
             i {
                 padding: .2rem;
             }
@@ -35,22 +42,22 @@ nav {
             transform: translateX(-3px)
         }
         .btn {
-            background: #0880ec;
+            background: $button;
             padding: .2rem 1.1rem;
-            border-radius: 2rem;
+            border-radius: .25rem;
             a {
-                color: white;
+                color: $primary-bg;
             }
         }
         .btn:hover {
-            background: #3e8e41;
+            background: $primary-color;
             transition: 0.5s;
         }
     }
 }
 
 .nav-links a:hover {
-    border-bottom: #3e8e41 solid 2px;
+    border-bottom: $primary-color solid 2px;
 }
 
 .dropdown {
@@ -63,7 +70,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: $primary-bg;
     top: 40px;
     min-width: 280px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -74,7 +81,7 @@ nav {
         height: 11px;
         top: -5.5px;
         left: 32px;
-        background-color: white;
+        background-color: $primary-bg;
         transform: rotate(45deg);
         transition: .3s;
         z-index: -1;
@@ -89,7 +96,7 @@ nav {
 }
 
 .dropdown-content a:hover {
-    background-color: white;
+    background-color: $primary-bg;
 }
 
 .dropdown:hover .dropdown-content {
@@ -97,7 +104,7 @@ nav {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: $primary-color;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,9 +113,9 @@ nav {
         overflow: hidden;
         top: 0;
         width: 100%;
-        height: 3rem;
-        background: white;
-        z-index: 1;
+        height: 70px;
+        background: $primary-bg;
+        z-index: 50;
         transition: 0.5s;
         img {
             position: absolute;
@@ -120,6 +127,8 @@ nav {
         }
         .hamburger {
             position: absolute;
+            display: flex;
+            flex-direction: column;
             cursor: pointer;
             right: 5%;
             top: 50%;
@@ -138,7 +147,7 @@ nav {
         }
         .nav-links {
             position: fixed;
-            background: rgb(230, 230, 230);
+            background: $primary-bg;
             height: 100vh;
             width: 100%;
             flex-direction: column;
@@ -149,16 +158,16 @@ nav {
                 margin: 5px;
                 a {
                     font-size: 20px;
-                    color: #0880ec;
-                    font-weight: 700;
+                    color: $secondary-color;
+                    // font-weight: 700;
                 }
             }
             .btn {
-                background: #3e8e41;
+                background: $button;
                 padding: 5px 10px;
-                border-radius: 2rem;
+                border-radius: 5px;
                 a {
-                    color: white;
+                    color: $primary-bg;
                 }
             }
         }
